@@ -9,7 +9,7 @@ sudo /opt/pwx/bin/px-runc install -c "pwx_cluster_portal" \
     -k consul://172.21.0.183:8500 \
     -d eth0 \
     -m eth0 \
-    -s /dev/vdb
+    -s /dev/xvdh
 
 sudo systemctl daemon-reload
 sudo systemctl enable portworx
