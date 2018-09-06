@@ -7,4 +7,4 @@
         mode: a+x
 
   - name: Run installation script
-    shell:  /home/ubuntu/pwx.sh >>tmp.txt
+    shell:  /home/ubuntu/pwx.sh {{ cluster_name }} {{ consul_ip }} {{ dev }} {{ dev }} {{ drive }} 
