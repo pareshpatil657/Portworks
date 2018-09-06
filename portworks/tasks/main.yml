@@ -7,4 +7,4 @@
         mode: a+x
 
   - name: Run installation script
-    shell:  /home/ubuntu/pwx.sh
+    shell:  /home/ubuntu/pwx.sh >>tmp.txt
