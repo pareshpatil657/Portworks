@@ -1,0 +1,3 @@
+[portworks-cluster]
+10.24.1.100 ansible_ssh_user=ubuntu ansible_python_interpreter=/usr/bin/python3
+10.24.0.155 ansible_ssh_user=ubuntu ansible_python_interpreter=/usr/bin/python3
