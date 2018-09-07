@@ -1,6 +1,6 @@
 ---
 
- - hosts: portworks-cluster
+ - hosts: portworx-cluster
    become_user: root
    become: true
    roles:
