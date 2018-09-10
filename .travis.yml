@@ -6,7 +6,7 @@ services:
   - docker
 
 script:
-  - docker build --t semaphore_custom .
+  - docker build -t semaphore_custom .
 
 #before_deploy:
 #  - docker login -u "$USER" -p "$PASS $registry"
