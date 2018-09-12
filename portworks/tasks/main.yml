@@ -3,8 +3,8 @@
   - name: Copy shell script to remote server
     copy:
         src: pwx.sh
-        dest: /home/ubuntu/pwx.sh
+        dest: /home/centos/pwx.sh
         mode: a+x
 
   - name: Run installation script
-    shell:  /home/ubuntu/pwx.sh {{ cluster_name }} {{ consul_ip }} {{ dev }} {{ dev1 }} {{ drive }} 
+    shell:  /home/centos/pwx.sh {{ cluster_name }} {{ consul_ip }} {{ dev }} {{ dev1 }} {{ drive }} 
