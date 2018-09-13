@@ -2,9 +2,9 @@
 
   - name: Copy shell script to remote server
     copy:
-        src: pwx.sh
-        dest: /opt/pwx.sh
+        src: install_portworx.sh
+        dest: /opt/install_portworx.sh
         mode: a+x
 
   - name: Run installation script
-    shell:  /home/centos/pwx.sh {{ cluster_name }} {{ consul_ip }} {{ dev }} {{ dev1 }} {{ drive }} 
+    shell:  /opt/install_portworx.sh {{ cluster_name }} {{ consul_ip }} {{ dev }} {{ dev1 }} {{ drive }} 

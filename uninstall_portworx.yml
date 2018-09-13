@@ -1,0 +1,7 @@
+---
+
+ - hosts: portworx-cluster
+   become_user: root
+   become: true
+   roles:
+     - uninstall_portworx

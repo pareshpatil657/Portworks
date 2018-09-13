@@ -1,0 +1,11 @@
+---
+
+  - name: Copy shell script to remote server
+    copy:
+        src: uninstall_portworx.sh
+        dest: /opt/uninstall_portworx.sh
+        mode: a+x
+
+  - name: Run uninstallation script
+    shell:  /opt/uninstall_portworx.shh { drive }
+ 
