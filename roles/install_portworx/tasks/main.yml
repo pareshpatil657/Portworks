@@ -3,7 +3,7 @@
   - name: Copy shell script to remote server
     copy:
         src: pwx.sh
-        dest: /home/centos/pwx.sh
+        dest: /opt/pwx.sh
         mode: a+x
 
   - name: Run installation script
