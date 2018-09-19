@@ -12,7 +12,7 @@
   "repositories":[
     {
       "name": "Portworx",
-      "git_url": "/tmp/hello.git",
+      "git_url": "tmp/repositories/Portworx.git",
       "ssh_key_name": "dummy_key"
     }
     
