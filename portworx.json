@@ -12,7 +12,7 @@
   "repositories":[
     {
       "name": "Portworx",
-      "git_url": "tmp/repositories/Portworx.git",
+      "git_url": "/tmp/repositories/Portworx.git",
       "ssh_key_name": "dummy_key"
     }
     
@@ -21,7 +21,7 @@
     {
       "name": "Portworx",
       "type": "file",
-      "inventory": "hosts/",
+      "inventory": "inventory/hosts/",
       "ssh_key_name": "dummy_key"
     }
   ],
