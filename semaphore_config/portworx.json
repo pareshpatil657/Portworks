@@ -1,0 +1,44 @@
+{
+  "project_name": "Portworx",
+  "ssh_keys":[
+    {
+      "name": "dummy_key",
+      "type": "ssh",
+      "key": "abcd",
+      "secret": "abcd"
+    }
+    
+  ],
+  "repositories":[
+    {
+      "name": "Portworx",
+      "git_url": "/tmp/repositories/Portworx.git",
+      "ssh_key_name": "dummy_key"
+    }
+    
+  ],
+  "inventory":[
+    {
+      "name": "Portworx",
+      "type": "file",
+      "inventory": "inventory/hosts/",
+      "ssh_key_name": "dummy_key"
+    }
+  ],
+  "templates":[
+    {
+      "alias": "Install Portworx",
+      "playbook": "install_portworx.yml",
+      "inventory_name": "Portworx",
+      "repository_name": "Portworx",
+      "ssh_key_name": "dummy_key"
+    },
+    {
+      "alias": "UnInstall Portworx",
+      "playbook": "uninstall_portworx.yml",
+      "inventory_name": "Portworx",
+      "repository_name": "Portworx",
+      "ssh_key_name": "dummy_key"
+    }    
+  ]
+}
